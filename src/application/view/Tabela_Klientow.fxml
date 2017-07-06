@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.KlienciController">
+   <children>
+      <TableView fx:id="tab_klienci" layoutX="51.0" layoutY="50.0" prefHeight="316.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="Id_column" prefWidth="42.0" text="Id" />
+          <TableColumn fx:id="Imie_column" prefWidth="73.0" text="Imię" />
+            <TableColumn fx:id="Naz_column" prefWidth="85.0" text="Nazwisko" />
+            <TableColumn fx:id="Ul_column" prefWidth="78.0" text="Ulica" />
+            <TableColumn fx:id="Kod_column" prefWidth="72.0" text="Kod pocz." />
+            <TableColumn fx:id="Miejsc_column" prefWidth="100.0" text="Miejscowość" />
+            <TableColumn fx:id="Tel_column" prefWidth="66.0" text="Tel. kom." />
+        </columns>
+      </TableView>
+      <Label layoutX="235.0" layoutY="6.0" text="Tabela klientow">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

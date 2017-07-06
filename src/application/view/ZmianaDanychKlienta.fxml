@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.TabController">
+   <children>
+      <VBox layoutX="191.0" layoutY="44.0" prefHeight="324.0" prefWidth="137.0" spacing="28.0">
+         <children>
+            <TextField fx:id="IdTextField" />
+            <TextField fx:id="imieTextField" />
+            <TextField fx:id="nazwiskoTextField" />
+            <TextField fx:id="ulTextField" />
+            <TextField fx:id="kodpoczTextField" />
+            <TextField fx:id="miejscTextField" />
+            <TextField fx:id="telTextField" />
+         </children>
+      </VBox>
+      <VBox layoutX="27.0" layoutY="44.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="324.0" prefWidth="110.0" spacing="33.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="105.0" text=" Imię" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Nazwisko">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Ulica">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Kod pocztowy">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Miejscowość">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Tel.kom.">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="zmod_tabela_button" layoutX="249.0" layoutY="415.0" mnemonicParsing="false" onAction="#ZmodTabOnAction" prefHeight="39.0" prefWidth="137.0" text="ZMIEŃ DANE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ok_zm_button" layoutX="334.0" layoutY="44.0" mnemonicParsing="false" onAction="#OkZMOnAction" text="OK" />
+      <Button layoutX="14.0" layoutY="415.0" mnemonicParsing="false" onAction="#CofnijOnAction" prefHeight="39.0" prefWidth="137.0" text="COFNIJ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lab_blad" layoutX="103.0" layoutY="461.0" text="  " textFill="RED">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
